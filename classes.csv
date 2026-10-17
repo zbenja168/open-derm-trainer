@@ -1,0 +1,28 @@
+class_id,group,teaching_class,set,image_type,match,exclude,confirm,partners,notes
+NEV_COMMON,Melanocytic benign,Common nevus (junctional/compound/dermal/lentiginous),both,dermoscopic,"Nevus>Nevus, NOS, Junctional|Nevus>Nevus, NOS, Compound|Nevus>Nevus, NOS, Dermal|Nevus>Nevus, Lentiginous",,any,NEV_DYS; ACROCH; DF,"The 'normal' foil, served in both sets and outside the contrast. The 14,506 bare 'Nevus' NOS images are left out: unknown subtype"
+NEV_DYS,Melanocytic benign,"Dysplastic (atypical, Clark) nevus",A,dermoscopic,"Nevus>Nevus, Atypical, Dysplastic, or Clark",,histopathology,MEL; NEV_COMMON,Dysplasia is a histological diagnosis; consensus-only labels excluded
+NEV_CONG,Melanocytic benign,Congenital nevus,A,dermoscopic,"Nevus>Nevus, Congenital",,any,MEL; NEV_COMMON,
+NEV_BLUE,Melanocytic benign,Blue nevus,A,dermoscopic,Nevus>Blue nevus,,any,MEL_NOD,
+NEV_SPITZ,Melanocytic benign,Spitz/Reed nevus,A,dermoscopic,"Nevus>Nevus, Spitz|Nevus>Nevus, Reed",,histopathology,MEL,Atypical Spitz tumour (5) excluded
+MEL,Melanoma,"Melanoma, flat/superficial (in situ and invasive, non-nodular, non-LM)",A,dermoscopic,"Melanoma in situ|Melanoma Invasive|Melanoma, NOS","Melanoma in situ>Melanoma in situ, Lentigo maligna type|Melanoma in situ>Melanoma in situ, Recurrent or persistent|Melanoma in situ>Melanoma in situ, Acral or acral-lentiginous|Melanoma Invasive>Melanoma Invasive, Nodular|Melanoma Invasive>Melanoma Invasive, On chronically sun-exposed skin or lentigo maligna melanoma",histopathology,NEV_DYS; SK; NEV_SPITZ,"Merges in situ, invasive and NOS (decided 2026-10-17). Subtype kept per item for feedback"
+LM,Melanoma,Lentigo maligna / lentigo maligna melanoma,A,dermoscopic,"Melanoma in situ>Melanoma in situ, Lentigo maligna type|Melanoma Invasive>Melanoma Invasive, On chronically sun-exposed skin or lentigo maligna melanoma",,histopathology,SL; LPLK; AK,Kept with SL and LPLK in set A (facial pigmented macule cluster)
+MEL_NOD,Melanoma,Nodular melanoma,A,dermoscopic,"Melanoma Invasive>Melanoma Invasive, Nodular",,histopathology,NEV_BLUE; HEMANG; BCC,
+SL,Flat pigmented non-melanocytic,Solar lentigo (incl. ink-spot),A,dermoscopic,Solar lentigo|Ink-spot lentigo,,any,LM; SK; LPLK,
+LPLK,Flat pigmented non-melanocytic,Lichen planus-like keratosis,A,dermoscopic,Lichen planus like keratosis,,any,LM; BCC; MEL,Crosses sets with BCC
+HEMANG,Vascular,Hemangioma (cherry and other),A,dermoscopic,Hemangioma,,any,ANGIOK; MEL_NOD,Only 54 histopathology-confirmed; consensus labels accepted
+ANGIOK,Vascular,Angiokeratoma,A,dermoscopic,Angiokeratoma,,any,HEMANG; MEL_NOD,
+SK,Keratinocytic benign,Seborrheic keratosis,B,dermoscopic,Seborrheic keratosis,,any,MEL; VERRUCA; SL,Crosses sets with MEL
+AK,Keratinocytic premalignant,Actinic keratosis,B,dermoscopic,Solar or actinic keratosis,,any,BOWEN; BCC_SUP; LM,
+BOWEN,Keratinocyte cancer,Bowen disease (SCC in situ),B,dermoscopic,Squamous cell carcinoma in situ,,histopathology,AK; BCC_SUP; SCC,
+SCC,Keratinocyte cancer,Invasive SCC (incl. keratoacanthoma-type),B,dermoscopic,"Squamous cell carcinoma, NOS|Squamous cell carcinoma, Invasive",,histopathology,BOWEN; BCC; VERRUCA,SCC NOS may include some in situ lesions; check in review
+BCC,Keratinocyte cancer,"Basal cell carcinoma (nodular, pigmented, infiltrative, NOS)",B,dermoscopic,Basal cell carcinoma,"Basal cell carcinoma>Basal cell carcinoma, Superficial",histopathology,MEL; LPLK; SCC; NEV_COMMON,Crosses sets with MEL and LPLK
+BCC_SUP,Keratinocyte cancer,Superficial BCC,B,dermoscopic,"Basal cell carcinoma>Basal cell carcinoma, Superficial",,histopathology,BOWEN; AK,
+DF,Soft tissue,Dermatofibroma,B,dermoscopic,Dermatofibroma,,any,NEV_COMMON,Only 84 histopathology-confirmed; consensus labels accepted
+ACROCH,Soft tissue,Acrochordon (fibroepithelial polyp),B,dermoscopic,Fibroepithelial polyp,,any,NEV_COMMON,
+VERRUCA,Infectious,Verruca,B,dermoscopic,Verruca,,any,SK; SCC,
+C_NEV,Clinical photo,Nevus (clinical),both,clinical,Nevus,,any,C_MEL; C_SK,Clinical-arm foil
+C_MEL,Clinical photo,Melanoma (clinical),A,clinical,"Melanoma in situ|Melanoma Invasive|Melanoma, NOS",,histopathology,C_NEV; C_SK; C_BCC,Kept in the same set as dermoscopic melanoma
+C_BCC,Clinical photo,BCC (clinical),B,clinical,Basal cell carcinoma,,histopathology,C_SCC; C_AK; C_MEL,
+C_AK,Clinical photo,Actinic keratosis (clinical),B,clinical,Solar or actinic keratosis,,any,C_SCC; C_BCC,
+C_SCC,Clinical photo,SCC incl. Bowen (clinical),B,clinical,"Squamous cell carcinoma, NOS",,histopathology,C_AK; C_BCC,
+C_SK,Clinical photo,Seborrheic keratosis (clinical),B,clinical,Seborrheic keratosis,,any,C_MEL; C_NEV,

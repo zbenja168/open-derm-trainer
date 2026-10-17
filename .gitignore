@@ -1,0 +1,7 @@
+data/raw/
+__pycache__/
+.venv/
+CLAUDE.md
+HANDOFF.md
+samples/
+web/public/derm/
