@@ -95,7 +95,8 @@ literature check's verdict stands: report skin type descriptively; there is no s
 - `data/items_manifest.csv`, which is the review sheet, with blank `reviewer_ok` and `reviewer_note`
   columns.
 
-**Result: 533 items, 107 test and 426 practice.** Every class has 4 test items and 16 practice items,
+**Result: 533 items, 108 test and 425 practice.** The test items come from 107 patients, because one
+patient supplies test items in two classes. Every class has 4 test items and 16 practice items,
 except angiokeratoma (4 + 9).
 
 Rules:
@@ -118,6 +119,6 @@ Limits:
 - Angiokeratoma has only 13 eligible patients. Keep it as a thin class, or drop it before the trial.
 
 ## Next
-1. Port the web app.
+1. Web app ported and deployed (see `HANDOFF.md`).
 2. Ask ISIC (support@isic-archive.com) which CC BY version the bare "CC-BY" label means.
 3. Write the item builder: patient-disjoint split, one image per lesion, and attribution stored per item.

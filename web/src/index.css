@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/*
+ * Colour tokens. Dark mode follows the system unless the viewer picks light or dark (data-theme on <html>).
+ * Lesion images are never filtered or tinted by the theme, so every participant sees the same stimulus.
+ */
+:root {
+  --surface: #fafaf9;
+  --panel: #ffffff;
+  --fg: #1c1917;
+  --muted: #78716c;
+  --line: #d6d3d1;
+  --line-soft: #e7e5e4;
+  --hover: #f5f5f4;
+  --accent: #1c1917;
+  --accent-fg: #ffffff;
+  --accent-hover: #44403c;
+  --ok: #ecfdf5;
+  --ok-line: #34d399;
+  --bad: #fff1f2;
+  --bad-line: #fb7185;
+  --danger: #b91c1c;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #1c1917;
+    --panel: #292524;
+    --fg: #f5f5f4;
+    --muted: #a8a29e;
+    --line: #57534e;
+    --line-soft: #44403c;
+    --hover: #292524;
+    --accent: #f5f5f4;
+    --accent-fg: #1c1917;
+    --accent-hover: #d6d3d1;
+    --ok: #022c22;
+    --ok-line: #047857;
+    --bad: #3b0a14;
+    --bad-line: #be123c;
+    --danger: #f87171;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --surface: #1c1917;
+  --panel: #292524;
+  --fg: #f5f5f4;
+  --muted: #a8a29e;
+  --line: #57534e;
+  --line-soft: #44403c;
+  --hover: #292524;
+  --accent: #f5f5f4;
+  --accent-fg: #1c1917;
+  --accent-hover: #d6d3d1;
+  --ok: #022c22;
+  --ok-line: #047857;
+  --bad: #3b0a14;
+  --bad-line: #be123c;
+  --danger: #f87171;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-hover: var(--hover);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-hover: var(--accent-hover);
+  --color-ok: var(--ok);
+  --color-ok-line: var(--ok-line);
+  --color-bad: var(--bad);
+  --color-bad-line: var(--bad-line);
+  --color-danger: var(--danger);
+}
+
+body {
+  background: var(--surface);
+  color: var(--fg);
+}
+
+@layer components {
+  .btn { @apply rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-fg hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-40; }
+  .btn-quiet { @apply rounded-md border border-line px-3 py-1.5 hover:bg-hover; }
+  .chip { @apply inline-flex rounded-full border border-line bg-panel px-3 py-1 text-sm hover:border-muted; }
+  .chip-on { @apply border-accent bg-accent text-accent-fg hover:border-accent; }
+}
