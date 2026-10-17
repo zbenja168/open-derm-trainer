@@ -5,6 +5,8 @@ images from the ISIC Archive, with spaced repetition (FSRS) and full response lo
 sibling of [Open ECG Trainer](https://github.com/zbenja168/open-ecg-trainer).
 **Prototype: the teaching items have not yet been reviewed by a dermatologist.**
 
+**Try it:** https://zbenja168.github.io/open-derm-trainer/ (progress is stored in your own browser only).
+
 ## What is here
 
 | Path | What it does |
@@ -14,6 +16,7 @@ sibling of [Open ECG Trainer](https://github.com/zbenja168/open-ecg-trainer).
 | `scripts/count_classes.py` | Counts candidate images, lesions and independent patients per class (`data/class_counts.csv`). |
 | `scripts/sample_images.py` | Builds a 10-per-class contact sheet for an eyeball check. |
 | `scripts/build_items.py` | Builds the item bank: one image per patient per class, a patient-disjoint held-out test split, images resized for the web, and a review sheet (`data/items_manifest.csv`). |
+| `web/` | The trainer (React, Vite, ts-fsrs), ported from Open ECG Trainer. See `web/README.md`. |
 | `notes/` | Literature and licence check; class-mapping notes. |
 
 ## Rebuild from scratch
