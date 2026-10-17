@@ -1,0 +1,218 @@
+[
+ {
+  "id": "NEV_COMMON",
+  "group": "Melanocytic benign",
+  "name": "Common nevus (junctional/compound/dermal/lentiginous)",
+  "set": "both",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "NEV_DYS",
+  "group": "Melanocytic benign",
+  "name": "Dysplastic (atypical, Clark) nevus",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "NEV_CONG",
+  "group": "Melanocytic benign",
+  "name": "Congenital nevus",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "NEV_BLUE",
+  "group": "Melanocytic benign",
+  "name": "Blue nevus",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "NEV_SPITZ",
+  "group": "Melanocytic benign",
+  "name": "Spitz/Reed nevus",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "MEL",
+  "group": "Melanoma",
+  "name": "Melanoma, flat/superficial (in situ and invasive, non-nodular, non-LM)",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "LM",
+  "group": "Melanoma",
+  "name": "Lentigo maligna / lentigo maligna melanoma",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "MEL_NOD",
+  "group": "Melanoma",
+  "name": "Nodular melanoma",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "SL",
+  "group": "Flat pigmented non-melanocytic",
+  "name": "Solar lentigo (incl. ink-spot)",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "LPLK",
+  "group": "Flat pigmented non-melanocytic",
+  "name": "Lichen planus-like keratosis",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "HEMANG",
+  "group": "Vascular",
+  "name": "Hemangioma (cherry and other)",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "ANGIOK",
+  "group": "Vascular",
+  "name": "Angiokeratoma",
+  "set": "A",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "SK",
+  "group": "Keratinocytic benign",
+  "name": "Seborrheic keratosis",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "AK",
+  "group": "Keratinocytic premalignant",
+  "name": "Actinic keratosis",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "BOWEN",
+  "group": "Keratinocyte cancer",
+  "name": "Bowen disease (SCC in situ)",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "SCC",
+  "group": "Keratinocyte cancer",
+  "name": "Invasive SCC (incl. keratoacanthoma-type)",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "BCC",
+  "group": "Keratinocyte cancer",
+  "name": "Basal cell carcinoma (nodular, pigmented, infiltrative, NOS)",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "BCC_SUP",
+  "group": "Keratinocyte cancer",
+  "name": "Superficial BCC",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "DF",
+  "group": "Soft tissue",
+  "name": "Dermatofibroma",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "ACROCH",
+  "group": "Soft tissue",
+  "name": "Acrochordon (fibroepithelial polyp)",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "VERRUCA",
+  "group": "Infectious",
+  "name": "Verruca",
+  "set": "B",
+  "imageType": "dermoscopic",
+  "available": true
+ },
+ {
+  "id": "C_NEV",
+  "group": "Clinical photo",
+  "name": "Nevus (clinical)",
+  "set": "both",
+  "imageType": "clinical",
+  "available": true
+ },
+ {
+  "id": "C_MEL",
+  "group": "Clinical photo",
+  "name": "Melanoma (clinical)",
+  "set": "A",
+  "imageType": "clinical",
+  "available": true
+ },
+ {
+  "id": "C_BCC",
+  "group": "Clinical photo",
+  "name": "BCC (clinical)",
+  "set": "B",
+  "imageType": "clinical",
+  "available": true
+ },
+ {
+  "id": "C_AK",
+  "group": "Clinical photo",
+  "name": "Actinic keratosis (clinical)",
+  "set": "B",
+  "imageType": "clinical",
+  "available": true
+ },
+ {
+  "id": "C_SCC",
+  "group": "Clinical photo",
+  "name": "SCC incl. Bowen (clinical)",
+  "set": "B",
+  "imageType": "clinical",
+  "available": true
+ },
+ {
+  "id": "C_SK",
+  "group": "Clinical photo",
+  "name": "Seborrheic keratosis (clinical)",
+  "set": "B",
+  "imageType": "clinical",
+  "available": true
+ }
+]
